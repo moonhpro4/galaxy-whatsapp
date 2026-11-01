@@ -50,6 +50,7 @@
       "uninstallerIcon": "build/icon.ico",
       "installerHeaderIcon": "build/icon.ico",
       "artifactName": "Galaxy-WhatsApp-Setup-${version}.${ext}"
-    }
+    },
+    "publish": null
   }
 }
