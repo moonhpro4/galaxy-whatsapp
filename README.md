@@ -1,4 +1,4 @@
-# Galaxy WhatsApp (unofficial)
+# WhatsApp (unofficial)
 
 Loads web.whatsapp.com in its own window.
 

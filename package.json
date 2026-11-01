@@ -1,6 +1,6 @@
 {
   "name": "galaxy-whatsapp",
-  "productName": "Galaxy WhatsApp",
+  "productName": "WhatsApp",
   "version": "1.0.0",
   "description": "A lightweight desktop wrapper for WhatsApp Web with an optional PIN lock.",
   "main": "main.js",
@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.galaxy.whatsapp",
-    "productName": "Galaxy WhatsApp",
+    "productName": "WhatsApp",
     "directories": {
       "output": "dist"
     },
@@ -45,7 +45,7 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "runAfterFinish": true,
-      "shortcutName": "Galaxy WhatsApp",
+      "shortcutName": "WhatsApp",
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
       "installerHeaderIcon": "build/icon.ico",

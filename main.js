@@ -59,7 +59,7 @@ function secureWebPrefs() {
 
 function createLockWindow() {
   lockWindow = new BrowserWindow({
-    width: 380, height: 520, resizable: false, maximizable: false, title: 'Galaxy WhatsApp',
+    width: 380, height: 520, resizable: false, maximizable: false, title: 'WhatsApp',
     icon: ICON, autoHideMenuBar: true, backgroundColor: '#0b0818', webPreferences: secureWebPrefs()
   });
   lockWindow.loadFile(path.join(__dirname, 'ui', 'lock.html'));
@@ -68,7 +68,7 @@ function createLockWindow() {
 
 function createMainWindow() {
   mainWindow = new BrowserWindow({
-    width: 1200, height: 800, minWidth: 700, minHeight: 500, title: 'Galaxy WhatsApp',
+    width: 1200, height: 800, minWidth: 700, minHeight: 500, title: 'WhatsApp',
     icon: ICON, autoHideMenuBar: true, backgroundColor: '#111b21',
     webPreferences: { partition: 'persist:whatsapp', contextIsolation: true, nodeIntegration: false, sandbox: true }
   });
