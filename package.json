@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win nsis"
+    "build": "electron-builder --win nsis --publish never"
   },
   "devDependencies": {
     "electron": "^33.2.0",

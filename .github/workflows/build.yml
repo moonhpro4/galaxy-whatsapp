@@ -13,11 +13,13 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: npm install
-      - name: Build
-        shell: bash
-        run: |
-          npm run build > build.log 2>&1 || { echo "::error::$(tail -n 8 build.log | tr "\n" "|" | tail -c 900)"; exit 1; }
+      - run: npm run build
       - uses: actions/upload-artifact@v4
         with:
           name: Galaxy-WhatsApp-Setup
           path: dist/*.exe
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "v1.0.${{ github.run_number }}" dist/*.exe --title "Galaxy WhatsApp v1.0.${{ github.run_number }}" --notes "Windows installer (setup wizard). Unofficial WhatsApp Web wrapper." --repo "${{ github.repository }}"
