@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+<title>Developer Mode</title><link rel="stylesheet" href="style.css"></head>
+<body style="align-items:flex-start"><div class="card" style="max-width:420px">
+<h1>Developer Mode</h1><p class="sub" id="ver"></p>
+
+<div class="panel"><h2>PIN lock</h2>
+<div class="status" id="pinStatus"></div>
+<input class="pin" id="cur" type="password" inputmode="numeric" maxlength="12" placeholder="Current PIN" style="display:none">
+<input class="pin" id="new" type="password" inputmode="numeric" maxlength="12" placeholder="New PIN (4–12 digits)">
+<input class="pin" id="new2" type="password" inputmode="numeric" maxlength="12" placeholder="Confirm new PIN">
+<button id="save">Save PIN</button>
+<button class="danger" id="remove" style="display:none">Remove PIN</button>
+<button class="ghost" id="lockNow" style="display:none">Lock app now</button>
+<div class="msg" id="pinMsg"></div></div>
+
+<div class="panel"><h2>Startup</h2>
+<div class="row"><span>Launch when Windows starts</span><input type="checkbox" id="startup" style="width:20px;height:20px"></div>
+<div class="msg" id="stMsg"></div></div>
+</div><script src="dev.js"></script></body></html>
